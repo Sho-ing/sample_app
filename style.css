@@ -1,0 +1,86 @@
+.navbar-cnt{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar{
+    background-color:rgba(0,0,0,0.5);
+}
+
+.navbar-toggler{
+    border-color: transparent;
+    color: rgba(0,0,0,0.5);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.title{
+    font-family: Garamond;
+    font-size: 36px;
+    color:#ffffff;  
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    margin: 0 12px;
+}
+
+.nav-link:hover{
+    color: lightgray;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-menu:hover{
+    color: lightgray;
+}
+
+#navbarDropdown{
+    color: #ffffff;
+    font-family: 'Segoe UI';
+}
+
+#navbarDropdown:hover{
+    color: lightgray;
+}
+
+.dropdown-item{
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Segoe UI';  
+    padding: 15px 36px 15px 15px;  
+}
+
+.dropdown-item:hover{
+    background-color: rgba(184, 135, 11, 0.555);
+    color: #ffffff;
+}
+
+@media(max-width:990px){
+    .navbar{
+        background-color: black;
+    }
+
+    .navbar-brand{
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar-nav{
+        padding: 0;
+    }
+
+   .navbar-cnt{
+       padding: 0;
+   }
+}
