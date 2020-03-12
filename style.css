@@ -7,13 +7,33 @@
     background-color:rgba(0,0,0,0.5);
 }
 
-.navbar-toggler{
-    border-color: transparent;
-    color: rgba(0,0,0,0.5);
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
 }
-
-.navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.menu-trigger {
+  position: relative;
+  width: 25px;
+  height: 40px;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 11px;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 8px;
 }
 
 .title{
@@ -26,28 +46,22 @@
     color: #ffffff;
     font-size: 13px;
     font-family: 'Segoe UI';
-    margin: 0 12px;
-}
-
-.nav-link:hover{
-    color: lightgray;
+    margin: 12px;
 }
 
 .dropdown-menu{
     background-color: black;
+    padding: 0;
+    margin: 0;
 }
 
-.dropdown-menu:hover{
+.nav-link:hover,dropdown-menu:hover,#navbarDropdown:hover{
     color: lightgray;
 }
 
 #navbarDropdown{
     color: #ffffff;
     font-family: 'Segoe UI';
-}
-
-#navbarDropdown:hover{
-    color: lightgray;
 }
 
 .dropdown-item{
@@ -65,22 +79,12 @@
 @media(max-width:990px){
     .navbar{
         background-color: black;
+        padding: 0;
     }
 
-    .navbar-brand{
+    .navbar-brand,navbar-na,navbar-cnt {
         padding: 0;
         margin: 0;
     }
 
-    .navbar{
-        padding: 0;
-    }
-
-    .navbar-nav{
-        padding: 0;
-    }
-
-   .navbar-cnt{
-       padding: 0;
-   }
 }
