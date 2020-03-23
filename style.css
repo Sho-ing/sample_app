@@ -1,10 +1,16 @@
-.navbar-cnt {
-    padding: 0;
-    margin: 0;
+.navbar-top {
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
-    background-color:rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-cover {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggler {
@@ -37,69 +43,71 @@
 }
 
 .title {
-    font-family: Garamond;
-    font-size: 36px;
-    color:#ffffff;  
+  font-family: Garamond;
+  font-size: 36px;
+  color: #ffffff;
 }
 
 .nav-link {
-    color: #ffffff;
-    font-size: 13px;
-    font-family: 'Segoe UI';
-    margin: 12px;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Segoe UI";
+  margin: 12px;
 }
 
 .dropdown-menu {
-    background-color: black;
-    padding: 0;
-    margin: 0;
+  background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-link:hover,dropdown-menu:hover,#navbarDropdown:hover {
-    color: lightgray;
+.nav-link:hover,
+.dropdown-menu:hover,
+#navbarDropdown:hover {
+  color: lightgray;
 }
 
 #navbarDropdown {
-    color: #ffffff;
-    font-family: 'Segoe UI';
+  color: #ffffff;
+  font-family: "Segoe UI";
 }
 
 .dropdown-item {
-    color: #ffffff;
-    font-size: 12px;
-    font-family: 'Segoe UI';  
-    padding: 15px 36px 15px 15px;  
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI";
+  padding: 15px 36px 15px 15px;
 }
 
 .dropdown-item:hover {
-    background-color: rgba(184, 135, 11, 0.555);
-    color: #ffffff;
+  background-color: rgba(184, 135, 11, 0.555);
+  color: #ffffff;
 }
 
-@media(max-width:990px) {
-    .navbar {
-        background-color: black;
-        padding: 0;
-    }
-
-    .navbar-brand,navbar-na {
-        padding: 0;
-        margin: 0;
-    }
-    
-    div.nav-cnt { 
-      height: 52px;
-    }
-
-    .nav-item {
-      background-color: black;
-    }
+@media (max-width: 990px) {
+  .navbar {
+    background-color: black;
+    padding: 0;
   }
 
-@media(max-width:767px) {
-  
-    .title_name {
-      width: 110px;
-      height: 18.84px;
-    }
+  .navbar-brand,
+  .navbar-na {
+    padding: 0;
+    margin: 0;
+  }
+
+  div.nav-top {
+    height: 52px;
+  }
+
+  .nav-item {
+    background-color: black;
+  }
+}
+
+@media (max-width: 767px) {
+  .title_name {
+    width: 110px;
+    height: 18px;
+  }
 }
