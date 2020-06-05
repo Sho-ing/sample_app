@@ -10,6 +10,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   height: 80px;
   padding: 0;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -89,6 +90,46 @@ button:focus {
   outline: none;
 }
 
+.page_top_image {
+  height: 600px;
+  width: 100%;
+  background-image: url(coffee4.jpg);
+  background-size: 1500px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  margin-top: -80px;
+}
+
+.page_top_text {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.page_top_title {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  top: 540px;
+  margin: 0;
+  background-color: black;
+  padding: 0 20px;
+}
+
 @media (max-width: 991px) {
   .navbar {
     height: 60px;
@@ -107,6 +148,19 @@ button:focus {
   .nav-item {
     background-color: black;
   }
+
+  .page_top_image {
+    height: 520px;
+    margin-top: -60px;
+  }
+
+  .page_top_text {
+    top: 180px;
+  }
+
+  .page_top_title {
+    top: 460px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -117,5 +171,33 @@ button:focus {
 
   .navbar-brand {
     padding: 0 30px;
+  }
+
+  .page_top_image {
+    height: 400px;
+    width: 100%;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    margin-top: -80px;
+  }
+
+  .page_top_text {
+    font-size: 25px;
+  }
+
+  .page_top_text {
+    font-size: 18px;
+    top: 180px;
+    line-height: 24px;
+  }
+
+  .page_top_title {
+    top: 335px;
+    font-size: 20px;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
   }
 }
