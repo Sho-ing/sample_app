@@ -90,44 +90,28 @@ button:focus {
   outline: none;
 }
 
-.page_top_image {
-  height: 600px;
-  width: 100%;
-  background-image: url(coffee4.jpg);
-  background-size: 1500px;
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  margin-top: -80px;
+.top-frame {
+  height: 62vw;
 }
 
-.page_top_text {
-  color: #ffffff;
+#top.top-image {
+  background-image: url(./coffee4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-top: -80px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#top .top-text {
+  color: #fff;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 25px;
+  line-height: 30px;
   writing-mode: vertical-rl;
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.page_top_title {
-  color: #ffffff;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 28px;
-  width: 250px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  transform: translate(-50%);
-  position: absolute;
-  left: 50%;
-  top: 540px;
-  margin: 0;
-  background-color: black;
-  padding: 0 20px;
 }
 
 @media (max-width: 991px) {
@@ -149,22 +133,13 @@ button:focus {
     background-color: black;
   }
 
-  .page_top_image {
-    height: 520px;
-    margin-top: -60px;
-  }
-
-  .page_top_text {
-    top: 180px;
-  }
-
-  .page_top_title {
-    top: 460px;
+  #top.top-image {
+    margin-top: 0px;
   }
 }
 
 @media (max-width: 767px) {
-  .title_name {
+  .title-name {
     width: 110px;
     height: 18px;
   }
@@ -173,31 +148,8 @@ button:focus {
     padding: 0 30px;
   }
 
-  .page_top_image {
-    height: 400px;
-    width: 100%;
-    background-size: 800px;
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    margin-top: -80px;
-  }
-
-  .page_top_text {
-    font-size: 25px;
-  }
-
-  .page_top_text {
-    font-size: 18px;
-    top: 180px;
+  #top .top-text {
+    font-size: 14px;
     line-height: 24px;
-  }
-
-  .page_top_title {
-    top: 335px;
-    font-size: 20px;
-    width: 180px;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 20px;
   }
 }
