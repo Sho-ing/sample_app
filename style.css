@@ -92,6 +92,7 @@ button:focus {
 
 .top-frame {
   height: 62vw;
+  position: relative;
 }
 
 #top.top-image {
@@ -99,10 +100,12 @@ button:focus {
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
-  margin-top: -80px;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -80px;
 }
 
 #top .top-text {
@@ -134,7 +137,7 @@ button:focus {
   }
 
   #top.top-image {
-    margin-top: 0px;
+    top: 0px;
   }
 }
 
