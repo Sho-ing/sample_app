@@ -90,12 +90,12 @@ button:focus {
   outline: none;
 }
 
-.top-frame {
+#top.top-frame {
   height: 62vw;
   position: relative;
 }
 
-#top.top-image {
+#top .top-image {
   background-image: url(./coffee4.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ button:focus {
     background-color: black;
   }
 
-  #top.top-image {
+  #top .top-image {
     top: 0px;
   }
 }
