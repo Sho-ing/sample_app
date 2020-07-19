@@ -88,7 +88,7 @@ header .nav-button:focus {
 }
 
 #top .image-title {
-  background-image: url(../image/coffee.jpg);
+  background-image: url(./img/coffee.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 90% 100%;
@@ -100,8 +100,8 @@ header .nav-button:focus {
   color: #fff;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 46px;
   writing-mode: vertical-rl;
   margin: 0;
 }
@@ -110,30 +110,32 @@ header .nav-button:focus {
   background-color: #000;
   color: #fff;
   text-align: center;
+  align-items: center;
   letter-spacing: 1px;
   height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  padding: 51px 0 71px;
 }
 
 #top .topic-upper {
   font-family: "Times New Roman", Times, serif;
-  padding: 25px 0 0 0;
+  padding: 0 0 10px;
   margin: 0;
-  font-size: 20px;
+  width: 89%;
 }
 
-#top .topic-below-lg {
-  font-family: "Segoe UI";
+#top .topic-below {
+  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   margin: 0;
-  padding: 15px;
-  font-size: 12px;
-  line-height: 30px;
-  color: #a9a9a9;
+  font-size: 14px;
+  line-height: 36px;
+  color: #fff;
   display: block;
-}
-
-#top .topic-below-sm {
-  display: none;
+  width: 89%;
 }
 
 @media (max-width: 991px) {
@@ -151,17 +153,6 @@ header .nav-button:focus {
   header .nav-item {
     background-color: #000;
   }
-
-  #top .topic-upper {
-    padding: 20px 0 0 0;
-    font-size: 16px;
-  }
-
-  #top .topic-below-lg {
-    padding: 12px;
-    font-size: 10px;
-    line-height: 18px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -175,21 +166,25 @@ header .nav-button:focus {
   }
 
   #top .image-title {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
-  #top .topic-below-lg {
-    display: none;
+  #top .topic-outer {
+    margin: 0 0 40px;
+    padding: 32px 20px 33px;
+    letter-spacing: 0;
   }
 
-  #top .topic-below-sm {
-    font-family: "Segoe UI";
-    color: #a9a9a9;
-    display: block;
-    margin: 0;
-    padding: 12px;
-    font-size: 10px;
-    line-height: 18px;
+  #top .topic-upper {
+    padding: 0 0 5px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  #top .topic-below {
+    line-height: 2;
+    width: 100%;
   }
 }
