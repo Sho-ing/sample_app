@@ -1,24 +1,22 @@
-.nav-top {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.navbar {
+header {
   background-color: rgba(0, 0, 0, 0.5);
   height: 80px;
   padding: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
 }
 
-.navbar-brand {
-  padding-left: 60px;
-  padding-bottom: 10px;
+header .navbar {
+  height: 100%;
+}
+
+header .nav-brand {
+  padding: 10px 60px;
   margin: 0;
 }
 
-.navbar-toggler {
+header .nav-toggler {
   position: relative;
   width: 20px;
   height: 17px;
@@ -26,96 +24,164 @@
   padding: 0;
 }
 
-.navbar-toggler span {
+header .nav-toggler span {
   position: absolute;
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 4px;
 }
 
-.navbar-toggler span:nth-of-type(1) {
+header .nav-toggler span:nth-of-type(1) {
   top: 0px;
 }
 
-.navbar-toggler span:nth-of-type(2) {
+header .nav-toggler span:nth-of-type(2) {
   top: 6px;
 }
 
-.navbar-toggler span:nth-of-type(3) {
+header .nav-toggler span:nth-of-type(3) {
   bottom: 0;
 }
 
-.title {
+header .nav-title-name {
   font-family: "Garamond";
   font-size: 36px;
-  color: #ffffff;
+  color: #fff;
 }
 
-.nav-link {
-  color: #ffffff;
+header .nav-link {
+  color: #fff;
   font-size: 13px;
   font-family: "Segoe UI";
-  padding: 29px 0px;
+  padding: 29px 8px;
   margin: 0 10px;
 }
 
-.dropdown-menu {
-  background-color: black;
+header .nav-dropdown-menu {
+  background-color: #000;
   padding: 0;
   margin: 0;
 }
 
-.nav-link:hover,
-.dropdown-menu:hover,
+header .nav-link:hover,
+.nav-dropdown-menu:hover,
 #navbarDropdown:hover {
   color: lightgray;
 }
 
-.dropdown-item {
-  color: #ffffff;
+header .nav-dropdown-item {
+  color: #fff;
   font-size: 12px;
   font-family: "Segoe UI";
   padding: 15px 36px 15px 15px;
 }
 
-.dropdown-item:hover {
+header .nav-dropdown-item:hover {
   background-color: rgba(184, 135, 11, 0.555);
-  color: #ffffff;
+  color: #fff;
 }
 
-button:focus {
+header .nav-button:focus {
   outline: none;
 }
 
+#top .image-title {
+  background-image: url(./img/coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62vw;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  writing-mode: vertical-rl;
+  margin: 0;
+}
+
+#top .topic-outer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 1px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  padding: 51px 0 71px;
+}
+
+#top .topic-upper {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0 11% 10px;
+}
+
+#top .topic-below {
+  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  color: #fff;
+  display: block;
+  margin: 0 11%;
+}
+
 @media (max-width: 991px) {
-  .navbar {
+  header {
     height: 60px;
-    background-color: black;
+    background-color: #000;
+    vertical-align: middle;
+    position: static;
   }
 
-  .navbar-brand {
+  header .nav-brand {
     padding: 0 60px;
   }
 
-  div.nav-top {
-    height: 52px;
-    padding: 11px;
-  }
-
-  .nav-item {
-    background-color: black;
+  header .nav-item {
+    background-color: #000;
   }
 }
 
 @media (max-width: 767px) {
-  .title_name {
+  header .nav-title-name {
     width: 110px;
     height: 18px;
   }
 
-  .navbar-brand {
+  header .nav-brand {
     padding: 0 30px;
+  }
+
+  #top .image-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #top .topic-outer {
+    margin: 0 0 40px;
+    padding: 32px 20px;
+    letter-spacing: 0;
+  }
+
+  #top .topic-upper {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 5px;
+  }
+
+  #top .topic-below {
+    line-height: 2;
+    margin: 0;
   }
 }
