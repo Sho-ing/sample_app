@@ -237,6 +237,10 @@ header .nav-button:focus {
   padding: 0 15px;
 }
 
+#cards .card-button:hover {
+  background-color: #442406;
+}
+
 @media (max-width: 1199px) {
   #cards .card-button {
     width: 150px;
