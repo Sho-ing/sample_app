@@ -172,14 +172,11 @@ header .nav-button:focus {
   line-height: 36px;
 }
 
-#cards {
+#cards .card-outer {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
 }
 
 #cards .card {
-  width: 31%;
   position: relative;
   border: none;
 }
@@ -318,13 +315,11 @@ header .nav-button:focus {
     line-height: 2;
   }
 
-  #cards {
-    display: block;
+  #cards .card-outer {
     margin-top: 50px;
   }
 
   #cards .card {
-    width: 100%;
     margin-top: 20px;
   }
 
