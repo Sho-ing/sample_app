@@ -14,11 +14,18 @@ header {
 
 header .navbar {
   height: 100%;
+  padding: 0%;
+}
+
+header .nav-outer {
+  height: 100%;
 }
 
 header .nav-brand {
-  padding: 10px 60px;
+  padding: 0 60px;
   margin: 0;
+  line-height: 76px;
+  height: 100%;
 }
 
 header .nav-toggler {
@@ -60,7 +67,7 @@ header .nav-link {
   color: #fff;
   font-size: 13px;
   font-family: "Segoe UI";
-  padding: 29px 8px;
+  line-height: 50px;
   margin: 0 10px;
 }
 
@@ -218,10 +225,6 @@ header .nav-button:focus {
   line-height: 2.4;
 }
 
-#cards .button-outer {
-  margin: 0;
-}
-
 #cards .card-button {
   color: #fff;
   background-color: #000;
@@ -253,11 +256,17 @@ header .nav-button:focus {
   }
 
   header .nav-brand {
-    padding: 0 60px;
+    line-height: 58px;
   }
 
   header .nav-item {
     background-color: #000;
+    padding: 0 6%;
+  }
+
+  header .nav-link {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -267,8 +276,9 @@ header .nav-button:focus {
     height: 18px;
   }
 
-  header .nav-brand {
-    padding: 0 30px;
+  header .nav-brand,
+  .nav-item {
+    padding: 0 20px;
   }
 
   #top .image-title {
