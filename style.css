@@ -225,7 +225,7 @@ header .nav-button:focus {
   line-height: 2.4;
 }
 
-#cards .card-button {
+#cards .card-btn {
   color: #fff;
   background-color: #000;
   border-color: #000;
@@ -237,12 +237,12 @@ header .nav-button:focus {
   padding: 0 15px;
 }
 
-#cards .card-button:hover {
+#cards .card-btn:hover {
   background-color: #442406;
 }
 
 @media (max-width: 1199px) {
-  #cards .card-button {
+  #cards .card-btn {
     width: 150px;
   }
 }
@@ -333,7 +333,7 @@ header .nav-button:focus {
     margin-top: 20px;
   }
 
-  #cards .card-button {
+  #cards .card-btn {
     width: 180px;
     height: 45px;
     line-height: 43px;
