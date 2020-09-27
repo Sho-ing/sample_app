@@ -1,5 +1,6 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 }
 
 header {
@@ -13,11 +14,18 @@ header {
 
 header .navbar {
   height: 100%;
+  padding: 0%;
+}
+
+header .nav-outer {
+  height: 100%;
 }
 
 header .nav-brand {
-  padding: 10px 60px;
+  padding: 0 60px;
   margin: 0;
+  line-height: 76px;
+  height: 100%;
 }
 
 header .nav-toggler {
@@ -59,7 +67,7 @@ header .nav-link {
   color: #fff;
   font-size: 13px;
   font-family: "Segoe UI";
-  padding: 29px 8px;
+  line-height: 50px;
   margin: 0 10px;
 }
 
@@ -102,6 +110,9 @@ header .nav-button:focus {
   width: 100%;
   height: 62vw;
   color: #fff;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
@@ -125,10 +136,11 @@ header .nav-button:focus {
 
 #top .topic-upper {
   margin: 0 11% 10px;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 #top .topic-below {
-  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-size: 14px;
   line-height: 36px;
   color: #fff;
@@ -157,13 +169,82 @@ header .nav-button:focus {
 
 #describe-cafe h2 {
   color: #442406;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 #describe-cafe p {
-  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-size: 14px;
   line-height: 36px;
+}
+
+#cards .card-outer {
+  margin-top: 100px;
+}
+
+#cards .card {
+  z-index: 0;
+  border: none;
+}
+
+#cards .card-image-top {
+  width: 100%;
+}
+
+#cards .triangle-hide {
+  width: 160px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  height: 160px;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  color: #442406;
+}
+
+#cards .triangle-hide::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  border-width: 76px;
+  border-style: solid;
+  border-color: #fff transparent transparent #fff;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+#cards .card-body {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+#cards .desc-outer {
+  font-size: 14px;
+  line-height: 2.4;
+}
+
+#cards .card-btn {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  border-radius: 0;
+  font-size: 14px;
+  width: 200px;
+  height: 56px;
+  line-height: 54px;
+  padding: 0 16px;
+}
+
+#cards .card-btn:hover {
+  background-color: #442406;
+}
+
+@media (max-width: 1199px) {
+  #cards .card-btn {
+    width: 150px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -175,11 +256,17 @@ header .nav-button:focus {
   }
 
   header .nav-brand {
-    padding: 0 60px;
+    line-height: 58px;
   }
 
   header .nav-item {
     background-color: #000;
+    padding: 0 60px;
+  }
+
+  header .nav-link {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -189,7 +276,12 @@ header .nav-button:focus {
     height: 18px;
   }
 
-  header .nav-brand {
+  header .nav-brand,
+  .nav-item {
+    padding: 0 20px;
+  }
+
+  header .nav-item {
     padding: 0 30px;
   }
 
@@ -235,5 +327,20 @@ header .nav-button:focus {
 
   #describe-cafe p {
     line-height: 2;
+  }
+
+  #cards .card-outer {
+    margin-top: 50px;
+  }
+
+  #cards .card {
+    margin-top: 20px;
+  }
+
+  #cards .card-btn {
+    width: 180px;
+    height: 46px;
+    line-height: 44px;
+    font-size: 12px;
   }
 }
