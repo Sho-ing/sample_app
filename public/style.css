@@ -1,5 +1,5 @@
 body {
-  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
+  font-family: "Times New Roman", "Segoe UI", Verdana, "游ゴシック", "YuGothic",
     "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 }
 
@@ -254,9 +254,6 @@ header .nav-button:focus {
 }
 
 #news-event .headline {
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-size: 46px;
   font-weight: 500;
   margin: 0;
@@ -267,15 +264,13 @@ header .nav-button:focus {
   margin-left: 16px;
 }
 
-#news-event .article:nth-child(n + 2) {
+#news-event .news-article:nth-child(n + 2) {
   border-top: none;
 }
 
-#news-event .article {
+#news-event .news-article {
   background-color: #fff;
-  border: 1px;
-  border-style: solid;
-  border-color: #ddd;
+  border: solid 1px #ddd;
   padding: 20px;
 }
 
@@ -322,9 +317,7 @@ header .nav-button:focus {
 
 #news-event .event-article {
   background-color: #fff;
-  border: 1px;
-  border-style: solid;
-  border-color: #ddd;
+  border: solid 1px #ddd;
 }
 
 #news-event .event-article:nth-child(n + 2) {
@@ -347,7 +340,7 @@ header .nav-button:focus {
 }
 
 #news-event .event-image:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.2);
 }
 
 #news-event .event-desc {
