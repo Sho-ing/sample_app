@@ -1,6 +1,12 @@
 body {
-  font-family: "Times New Roman", "Segoe UI", Verdana, "游ゴシック", "YuGothic",
+  font-family: "Segoe UI", Verdana, "游ゴシック", "YuGothic",
     "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+body .font-times {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 header {
@@ -110,9 +116,6 @@ header .nav-button:focus {
   width: 100%;
   height: 62vw;
   color: #fff;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
@@ -136,9 +139,6 @@ header .nav-button:focus {
 
 #top .topic-upper {
   margin: 0 11% 10px;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 #top .topic-below {
   font-size: 14px;
@@ -169,9 +169,6 @@ header .nav-button:focus {
 
 #describe-cafe h2 {
   color: #442406;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
 #describe-cafe p {
