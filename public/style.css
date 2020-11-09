@@ -239,8 +239,8 @@ header .nav-button:focus {
 }
 
 #news-event {
-  margin: 100px 0;
-  padding: 60px 0;
+  margin-top: 100px;
+  padding: 70px 0;
   background-color: #f5f5f5;
 }
 
@@ -360,6 +360,79 @@ header .nav-button:focus {
   margin: 10px 0 0;
 }
 
+#bookcafe {
+  background-image: url(./img/bookcafe-3.jpg);
+  background-size: cover;
+  padding: 100px 0;
+  margin-bottom: 60px;
+}
+
+#bookcafe .title {
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#bookcafe .desc {
+  font-size: 14px;
+  color: #fff;
+  line-height: 2.6;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#bookcafe .tag-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#bookcafe .tag {
+  width: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+#bookcafe .tag::after {
+  content: "";
+  width: 60px;
+  height: 120px;
+  background: linear-gradient(116deg, transparent 0 50%, #fff 50%);
+  position: absolute;
+  left: 180px;
+  top: 0;
+}
+
+#bookcafe .tag-image-outer {
+  height: 120px;
+  width: 240px;
+  overflow: hidden;
+}
+
+#bookcafe .tag-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+#bookcafe .tag-image:hover {
+  transform: scale(1.2);
+}
+
+#bookcafe .tag-title {
+  color: #000;
+  margin: 0;
+  text-decoration: none;
+}
+
 @media (max-width: 1199px) {
   #cards .card-btn {
     width: 150px;
@@ -386,6 +459,27 @@ header .nav-button:focus {
   header .nav-link {
     padding: 0;
     margin: 0;
+  }
+
+  #bookcafe {
+    padding: 50px 0;
+  }
+
+  #bookcafe .title {
+    font-size: 26px;
+  }
+
+  #bookcafe .desc {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  #bookcafe .tag-container {
+    flex-wrap: wrap;
+  }
+
+  #bookcafe .tag {
+    margin-bottom: 20px;
   }
 }
 
@@ -498,5 +592,9 @@ header .nav-button:focus {
 
   #news-event .event-desc {
     font-size: 14px;
+  }
+
+  #bookcafe .title {
+    font-size: 18px;
   }
 }
