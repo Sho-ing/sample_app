@@ -392,12 +392,13 @@ header .nav-button:focus {
 
 #bookcafe .tag {
   width: 400px;
-  background-color: #fff;
+  height: 120px;
   display: flex;
   align-items: center;
   position: relative;
   text-decoration: none;
   margin: 0 12px;
+  overflow: hidden;
 }
 
 #bookcafe .tag::after {
@@ -410,27 +411,26 @@ header .nav-button:focus {
   top: 0;
 }
 
-#bookcafe .tag-image-outer {
-  height: 120px;
-  width: 240px;
-  overflow: hidden;
-}
-
-#bookcafe .tag-image {
+#bookcafe .tag-img {
   object-fit: cover;
   height: 100%;
-  width: 100%;
+  width: 240px;
   transition: 0.5s ease;
 }
 
-#bookcafe .tag-image:hover {
+#bookcafe .tag:hover .tag-img {
   transform: scale(1.2);
 }
 
 #bookcafe .tag-title {
   color: #000;
-  margin: 0;
-  text-decoration: none;
+  width: 160px;
+  line-height: 120px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 @media (max-width: 1199px) {
@@ -596,5 +596,19 @@ header .nav-button:focus {
 
   #bookcafe .title {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 440px) {
+  #bookcafe .tag {
+    width: 280px;
+  }
+
+  #bookcafe .tag::after {
+    left: 100px;
+  }
+
+  #bookcafe .tag-title {
+    width: 120px;
   }
 }
