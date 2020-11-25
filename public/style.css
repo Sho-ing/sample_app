@@ -411,6 +411,87 @@ header .nav-button:focus {
   background-color: #fff;
 }
 
+#footer {
+  text-align: center;
+}
+
+#footer .homebutton {
+  display: inline-block;
+  width: 140px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+
+#footer .logo-Switch {
+  height: 100%;
+}
+
+#footer .desc {
+  font-size: 14px;
+  line-height: 2;
+  padding: 0 20px;
+}
+
+#footer .logo-outer {
+  margin-bottom: 50px;
+}
+
+#footer .logo {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+#footer .logo:last-child {
+  margin-right: 0;
+}
+
+#footer .wifi {
+  transform: rotate(45deg);
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+#footer ul :first-child ::before {
+  display: none;
+}
+
+#footer .link-outer ::before {
+  content: "|";
+  margin: 0 10px;
+}
+
+#footer .link {
+  color: #000;
+  font-size: 14px;
+}
+
+#footer .link:hover {
+  color: #442406;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  color: #fff;
+  font-size: 12px;
+  background-color: #000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 @media (max-width: 1199px) {
   #cards .card-btn {
     width: 150px;
@@ -543,5 +624,28 @@ header .nav-button:focus {
 
   #bookcafe .topic-title {
     font-size: 20px;
+  }
+
+  #footer .homebutton {
+    width: 110px;
+    height: 18px;
+    margin-bottom: 20px;
+  }
+
+  #footer ul {
+    display: block;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  #footer .link-outer {
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    line-height: 2.2;
+  }
+
+  #footer .link-outer ::before {
+    display: none;
   }
 }
