@@ -436,14 +436,22 @@ header .nav-button:focus {
   margin-bottom: 50px;
 }
 
-#footer .logo {
-  width: 16px;
-  height: 16px;
+#footer .logo-link {
   margin-right: 12px;
 }
 
-#footer .logo:last-child {
+#footer .logo-link:last-child {
   margin-right: 0;
+}
+
+#footer .logo {
+  width: 16px;
+  height: 16px;
+  transition: 0.2s;
+}
+
+#footer .logo:hover {
+  opacity: 0.4;
 }
 
 #footer .wifi {
