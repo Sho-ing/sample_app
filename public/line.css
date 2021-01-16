@@ -4,7 +4,7 @@ main {
 }
 
 main .talk {
-  padding-top: 10px;
+  padding: 10px 0;
   background-color: rgb(97, 149, 218);
 }
 
@@ -32,36 +32,6 @@ main .text {
   font-weight: 500;
 }
 
-main .text-you::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-top: 12px solid#fff;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-radius: 50%;
-  transform: rotate(-134deg);
-}
-
-main .text-you::after {
-  content: "";
-  position: absolute;
-  left: -14px;
-  top: -24px;
-  width: 0;
-  height: 0;
-  border-left: 16px solid transparent;
-  border-top: 16px solid rgb(97, 149, 218);
-  border-right: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-radius: 50%;
-  transform: rotate(-135deg);
-}
-
 main .text-me-outer {
   flex-direction: row-reverse;
   margin-left: 40px;
@@ -71,38 +41,55 @@ main .text-me {
   background-color: #ccff99;
 }
 
-main .text-me-outer .kidoku {
-  margin-bottom: 16px;
-}
-
-main .text-me::before {
+main .text::before {
   content: "";
   position: absolute;
-  right: -10px;
   top: -10px;
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
-  border-top: 12px solid #ccff99;
   border-right: 12px solid transparent;
   border-bottom: 12px solid transparent;
   border-radius: 50%;
-  transform: rotate(134deg);
 }
 
-main .text-me::after {
+main .text::after {
   content: "";
   position: absolute;
-  right: -14px;
   top: -24px;
   width: 0;
   height: 0;
   border-left: 16px solid transparent;
-  border-top: 16px solid rgb(97, 149, 218);
   border-right: 16px solid transparent;
+  border-top: 16px solid rgb(97, 149, 218);
   border-bottom: 16px solid transparent;
   border-radius: 50%;
+}
+
+main .text-you::before {
+  left: -10px;
+  border-top: 12px solid #fff;
+  transform: rotate(-134deg);
+}
+
+main .text-you::after {
+  left: -14px;
+  transform: rotate(-135deg);
+}
+
+main .text-me::before {
+  right: -10px;
+  border-top: 12px solid #ccff99;
+  transform: rotate(134deg);
+}
+
+main .text-me::after {
+  right: -14px;
   transform: rotate(135deg);
+}
+
+main .text-me-outer .read {
+  margin-bottom: 16px;
 }
 
 .date-outer {
@@ -127,14 +114,9 @@ main .clock {
   text-align: right;
 }
 
-main .komaba-icon {
+main .icon-you {
   height: 40px;
-  border-radius: 50%;
-  margin: 0 6px;
-}
-
-main .daddy-icon {
-  height: 40px;
+  width: 40px;
   border-radius: 50%;
   margin: 0 6px;
 }
