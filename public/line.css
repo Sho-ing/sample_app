@@ -3,7 +3,7 @@ main {
     "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 }
 
-main .talk {
+main #talk {
   padding: 10px 0;
   background-color: rgb(97, 149, 218);
 }
